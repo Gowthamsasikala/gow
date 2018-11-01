@@ -1,0 +1,11 @@
+.box{
+    border:1px solid #85929E;
+    padding: 7px;
+    box-shadow: 5px 10px #888888;
+}
+.but{
+    margin-left: 10%;
+}
+.but2{
+    margin-left:90%;
+}
