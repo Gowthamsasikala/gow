@@ -11,6 +11,10 @@ import { RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { UserSignInPageComponent } from './user-sign-in-page/user-sign-in-page.component';
 import { UserInterfaceComponent } from './user-interface/user-interface.component';
+import { PolicyRegisterComponent } from './policy-register/policy-register.component';
+import { AdminDashBoardComponent } from './admin-dash-board/admin-dash-board.component';
+import { EditPolicyComponent } from './edit-policy/edit-policy.component';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { UserInterfaceComponent } from './user-interface/user-interface.componen
     UserRegisterComponent,
     WelcomeComponent,
     UserSignInPageComponent,
-    UserInterfaceComponent
+    UserInterfaceComponent,
+    PolicyRegisterComponent,
+    AdminDashBoardComponent,
+    EditPolicyComponent,
+    PaymentPageComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +41,11 @@ import { UserInterfaceComponent } from './user-interface/user-interface.componen
       {path:'', redirectTo:'welcome' ,pathMatch:'full'},
       {path:'UserRegister',component:UserRegisterComponent},
       {path:'Signin',component:UserSignInPageComponent},
-      {path:'Uinter',component:UserInterfaceComponent}
+      {path:'Uinter',component:UserInterfaceComponent},
+      {path:'PolicyRegister' ,component:PolicyRegisterComponent},
+      {path:'AdminDash',component:AdminDashBoardComponent},
+      {path:'EditPolicy',component:EditPolicyComponent},
+      {path:'Payment',component:PaymentPageComponent}
 
     ])
   ],

@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-md-12">
+      <h3 style="text-align: center">Edit Policy Page</h3>
+      <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" id="borderRadius">
+      <form (click)="EditPolicy()">
+        <div class="form-group">
+          <label for="Pname">Policy Name : </label>
+          <input id="Pname" type="text" [(ngModel)]="Pname" name="Pname" class="form-control curve" required="true" placeholder="Policy Name">
+        </div>
+       
+        <div class="form-group">
+          <label for="DIY">Duration in Years : </label>
+          <input id="DIY" type="text" [(ngModel)]="DIY" name="DIY" class="form-control curve" placeholder="Duration in Years in DD/MM/YYYY" required="true">
+        </div>
+       
+        <div class="form-group">
+          <label for="PType">Policy Type : </label>
+          <input id="PType" type="text" [(ngModel)]="PType" name="PType" class="form-control curve" placeholder="Policy Type" required="true">
+        </div>
+        
+       
+        <div class="form-group">
+          <label for="TAmount">Term Amount : </label>
+          <input id="TAmount" type="text" [(ngModel)]="TAmount" name="TAmount" class="form-control curve" placeholder="Term Amount" required="true">
+        </div>
+       
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-4">
+              <button class="btn btnDesign curve"   type="click" style="padding: 13px 30px;">Update policy</button>
+  
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-5">
+              <button class="btn btnDesign curve"  style="padding: 13px 60px;"   type="reset"> Reset </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>

@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-md-12">
-    <h2 style="text-align: center">User Sign In</h2>
+    <h2 style="text-align: center">User and Admin Sign In</h2>
   </div>
 </div>
 <br>
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-4">
 
   </div>
@@ -35,4 +35,36 @@
 
 
   </div>
+</div> -->
+<div class="row" id="pwd-container">
+  <div class="col-md-4"></div>
+  
+  <div class="col-md-4">
+    <section class="login-form">
+      <form method="post" action="#" role="login" (click)="validation()">
+        <img src="http://i.imgur.com/RcmcLv4.png" class="img-responsive" alt="" />
+        <input type="email"  [(ngModel)]="UserType" name="email" placeholder="Email" required class="form-control input-lg" />
+        
+        <input type="password" [(ngModel)]="Password" name="Password" class="form-control input-lg" id="password" placeholder="Password" required="true" />
+        
+        
+        <div class="pwstrength_viewport_progress"></div>
+        
+        
+        <button name="go" class="btn btn-lg btnDesign btn-block" type="click">Sign in</button>
+        <div>
+          <a href="#">Create account</a> or <a href="#">reset password</a>
+        </div>
+        
+      </form>
+      
+      <div class="form-links">
+        <a  class="colour" href="#">www.PMSWebsite.com</a>
+      </div>
+    </section>  
+    </div>
+    
+    <div class="col-md-4"></div>
+    
+
 </div>
